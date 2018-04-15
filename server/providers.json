@@ -1,0 +1,44 @@
+{
+  "facebook-login": {
+    "provider": "facebook",
+    "module": "passport-facebook",
+    "profileFields": ["gender", "link", "locale", "name", "timezone",
+      "verified", "email", "updated_time"],
+    "clientID": "315768762171883",
+    "clientSecret": "f5cb6a2b24a6fb9fa277e2699b13cb67",
+    "callbackURL": "/auth/facebook/callback",
+    "authPath": "/auth/facebook",
+    "callbackPath": "/auth/facebook/callback",
+    "successRedirect": "/api/Users/me",
+    "failureRedirect": "/login",
+    "scope": ["public_profile"],
+    "failureFlash": true
+  },
+  "google-login": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "854490347818-purug9nq4if6pnuqkmvnb7hir48e3p10.apps.googleusercontent.com",
+    "clientSecret": "E1Vqb3dHwr5HMG1FLjCD3KBq",
+    "callbackURL": "/auth/google/callback",
+    "authPath": "/auth/google",
+    "callbackPath": "/auth/google/callback",
+    "successRedirect": "/api/Users/me",
+    "failureRedirect": "/login",
+    "scope": ["email", "profile"],
+    "failureFlash": true
+  },
+  "twitter-login": {
+    "provider": "twitter",
+    "authScheme": "oauth",
+    "module": "passport-twitter",
+    "callbackURL": "/auth/twitter/callback",
+    "authPath": "/auth/twitter",
+    "callbackPath": "/auth/twitter/callback",
+    "successRedirect": "/api/Users/me",
+    "failureRedirect": "/login",
+    "consumerKey": "OVi8PLxQlc5HJeCCUOlumO3Fr",
+    "consumerSecret": "02zNDSHri4VXKUM6U635ChB70AVCV5pFnhPY8sz7T9ogFA0Yz0",
+    "failureFlash": true
+  }
+}
