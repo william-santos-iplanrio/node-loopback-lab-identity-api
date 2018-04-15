@@ -1,0 +1,1 @@
+# node-loopback-lab-identity-api
